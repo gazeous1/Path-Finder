@@ -1,0 +1,112 @@
+.node {
+  width: 25px;
+  height: 25px;
+  outline: 1px solid rgb(199, 199, 199);
+  display: inline-table;
+}
+
+.node-start {
+  background-image: url('../../icons/car1.png');
+  background-size: 23px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.node-finish {
+  background-image: url('../../icons/waypoint.png');
+  background-size: 23px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.node-wall {
+  animation-name: wallNode;
+  animation-duration: 0.1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.1s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes wallNode {
+  0% {
+    transform: scale(0.2);
+    background-color: rgba(235, 235, 235, 0.2);
+  }
+  50% {
+    transform: scale(0.5);
+    background-color: rgba(114, 114, 114, 0.5);
+  }
+  100% {
+    transform: scale(1.0);
+    background-color: rgb(29, 29, 29);
+  }
+}
+
+.node-visited {
+  animation-name: visitNode;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes visitNode {
+
+
+ 
+   0% {
+      transform: scale(0.3);
+      background-color: rgb(255, 183, 183);
+      border-radius: 100%;
+    }
+  
+    50% {
+      transform: scale(0.5);
+      background-color: rgb(255, 142, 142);
+      border-radius: 75%;
+    }
+  
+    75% {
+      transform: scale(0.7);
+      background-color: rgb(255, 124, 124);
+      border-radius: 50%;
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color: rgb(253, 91, 91);
+    }
+  
+}
+
+.node-path {
+  animation-name: shortestPath;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes shortestPath {
+  0% {
+    transform: scale(0.5);
+    background-color: rgb(32, 250, 177);
+  }
+  50% {
+    transform: scale(1.5);
+    background-color: rgb(30, 230, 163);
+  }
+  100% {
+    transform: scale(1.0);
+    background-color: rgb(27, 209, 149);
+  }
+}

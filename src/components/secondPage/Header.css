@@ -1,0 +1,5 @@
+.navbar-nav
+{
+    justify-content: space-evenly;
+    display: flex;
+}

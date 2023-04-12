@@ -1,0 +1,19 @@
+#icon-legend {
+  font-family:"Encode Sans Expanded",sans-serif;
+  margin: 78px 128px 3px;
+  padding: 10px 0px;
+  display: flex;
+  list-style: none;
+  color: rgb(0, 0, 0);
+}
+
+.icon-label {
+  margin: 0px 0px 0px 35px;
+  padding: 0px 0px 0px 30px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin: 0px 0px 0px 5px;
+}
